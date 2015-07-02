@@ -40,6 +40,7 @@
         ],
         "post-root-package-install": [
             "php -r \"copy('.env.example', '.env');\"",
+            "php artisan key:generate",
             "touch storage/database.sqlite && php artisan migrate"
         ],
         "post-create-project-cmd": [
